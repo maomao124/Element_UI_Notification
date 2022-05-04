@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Notification
+  File name(文件名): test2
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/4
+  Time(创建时间)： 21:56
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <el-button type="success" @click="open" type="primary">打开消息提示</el-button>
+    <el-button type="info" @click="open1" type="primary">打开消息提示</el-button>
+    <el-button type="warning" @click="open2" type="primary">打开消息提示</el-button>
+    <el-button type="danger" @click="open3" type="primary">打开消息提示</el-button>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            open: function ()
+            {
+                this.$notify({
+                    type: "success",
+                    title: "提示",
+                    message: "成功消息",
+                })
+            },
+            open1: function ()
+            {
+                this.$notify({
+                    type: "info",
+                    title: "提示",
+                    message: "普通消息",
+                })
+            },
+            open2: function ()
+            {
+                this.$notify({
+                    type: "warning",
+                    title: "提示",
+                    message: "警告消息",
+                })
+            },
+            open3: function ()
+            {
+                this.$notify({
+                    type: "error",
+                    title: "提示",
+                    message: "错误消息",
+                })
+            },
+        },
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
