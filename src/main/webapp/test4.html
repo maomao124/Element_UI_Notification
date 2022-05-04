@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Notification
+  File name(文件名): test4
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/4
+  Time(创建时间)： 22:03
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <el-button type="success" @click="open" type="primary">打开消息提示</el-button>
+    <el-button type="info" @click="open1" type="primary">打开消息提示</el-button>
+    <el-button type="warning" @click="open2" type="primary">打开消息提示</el-button>
+    <el-button type="danger" @click="open3" type="primary">打开消息提示</el-button>
+    <br>
+    <br>
+    <el-button type="success" @click="open20" type="primary">打开消息提示</el-button>
+    <el-button type="info" @click="open21" type="primary">打开消息提示</el-button>
+    <el-button type="warning" @click="open22" type="primary">打开消息提示</el-button>
+    <el-button type="danger" @click="open23" type="primary">打开消息提示</el-button>
+    <br>
+    <br>
+    <el-button type="success" @click="open30" type="primary">打开消息提示</el-button>
+    <el-button type="info" @click="open31" type="primary">打开消息提示</el-button>
+    <el-button type="warning" @click="open32" type="primary">打开消息提示</el-button>
+    <el-button type="danger" @click="open33" type="primary">打开消息提示</el-button>
+    <br>
+    <br>
+    <el-button type="success" @click="open40" type="primary">打开消息提示</el-button>
+    <el-button type="info" @click="open41" type="primary">打开消息提示</el-button>
+    <el-button type="warning" @click="open42" type="primary">打开消息提示</el-button>
+    <el-button type="danger" @click="open43" type="primary">打开消息提示</el-button>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {
+            open: function ()
+            {
+                this.$notify.success({
+
+                    title: "提示",
+                    message: "成功消息",
+                })
+            },
+            open1: function ()
+            {
+                this.$notify.info({
+
+                    title: "提示",
+                    message: "普通消息",
+                })
+            },
+            open2: function ()
+            {
+                this.$notify.warning({
+
+                    title: "提示",
+                    message: "警告消息",
+                })
+            },
+            open3: function ()
+            {
+                this.$notify.error({
+                    title: "提示",
+                    message: "错误消息",
+                })
+            },
+
+            open20: function ()
+            {
+                this.$notify.success({
+
+                    title: "提示",
+                    message: "成功消息",
+                    position: "bottom-right"
+                })
+            },
+            open21: function ()
+            {
+                this.$notify.info({
+
+                    title: "提示",
+                    message: "普通消息",
+                    position: "bottom-right"
+                })
+            },
+            open22: function ()
+            {
+                this.$notify.warning({
+
+                    title: "提示",
+                    message: "警告消息",
+                    position: "bottom-right"
+                })
+            },
+            open23: function ()
+            {
+                this.$notify.error({
+                    title: "提示",
+                    message: "错误消息",
+                    position: "bottom-right"
+                })
+            },
+
+            open30: function ()
+            {
+                this.$notify.success({
+
+                    title: "提示",
+                    message: "成功消息",
+                    position: "bottom-left"
+                })
+            },
+            open31: function ()
+            {
+                this.$notify.info({
+
+                    title: "提示",
+                    message: "普通消息",
+                    position: "bottom-left"
+                })
+            },
+            open32: function ()
+            {
+                this.$notify.warning({
+
+                    title: "提示",
+                    message: "警告消息",
+                    position: "bottom-left"
+                })
+            },
+            open33: function ()
+            {
+                this.$notify.error({
+                    title: "提示",
+                    message: "错误消息",
+                    position: "bottom-left"
+                })
+            },
+
+            open40: function ()
+            {
+                this.$notify.success({
+
+                    title: "提示",
+                    message: "成功消息",
+                    position: "top-left"
+                })
+            },
+            open41: function ()
+            {
+                this.$notify.info({
+
+                    title: "提示",
+                    message: "普通消息",
+                    position: "top-left"
+                })
+            },
+            open42: function ()
+            {
+                this.$notify.warning({
+
+                    title: "提示",
+                    message: "警告消息",
+                    position: "top-left"
+                })
+            },
+            open43: function ()
+            {
+                this.$notify.error({
+                    title: "提示",
+                    message: "错误消息",
+                    position: "top-left"
+                })
+            },
+        },
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
